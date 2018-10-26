@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Guru99 Suite">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+    <test name="Login Test case">
+
+        <classes>
+
+            <class name="Tests.LoginTC" >
+                <methods>
+                    <include name="LoginTC1"/>
+                    <!--<include name="LoginTC2"/>-->
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+
+</suite>
+<!--<listeners>-->
+<!--<listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter" />-->
+<!--</listeners>-->
